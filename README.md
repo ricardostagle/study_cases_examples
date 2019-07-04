@@ -1,3 +1,3 @@
-# study_cases_examples
+# Study cases examples
 
-Try these examples going to https://npm.runkit.com/, you will see easy how is working this coda.
+Try these examples going to https://npm.runkit.com/, you will see easy how is working this code.
