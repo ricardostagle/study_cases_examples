@@ -1,7 +1,7 @@
 
 //Copy to repository to your projects folder
 
-$ git clone https://github.com/youruser/yourrepository.git
+$ git clone https://github.com/your_username/your_repository.git
 
 //Add a file to commit
 
@@ -18,3 +18,51 @@ $ git push -u origin master
 //In these cases, the "reset" command is your best friend:
 
 $ git reset --soft HEAD~1
+
+//Create or switch branch
+
+$ git checkout your_branch_name
+
+//Check branch list
+
+$ git branch
+
+//Create remove branch
+
+$ git branch -D your_branch_name
+
+
+
+//Basic clean and update your repository
+
+$ git reset --hard
+
+$ git clean -fd
+
+$ git checkout master
+
+$ git fetch --all
+
+$ git pull --rebase upstream master
+
+
+
+//Update from upstream your present reposity
+
+$ git stash
+
+$ git pull --rebase upstream master
+
+$ git apply stash
+
+
+
+//Load another person repository
+
+$ git remote add username https://github.com/username/user_repository.git
+
+
+
+//Load another person branch
+
+$ git checkout -b your_branch_name username/user_branch_name
