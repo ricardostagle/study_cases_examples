@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+  function Person(first, last, age, gender, interests, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+    this.eyeColor = eye;
+  }
+
+  Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
+  };
+
+  var myFather = new Person("John", "Doe", 50, 'male', ['music', 'skiing'], "blue");
+  var person1Dad = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing'], "brown");
+  var person2Mom = new Person('Tammi', 'Smith', 32, 'neutral', ['music', 'skiing', 'kickboxing'], "black");
+  document.getElementById("demo").innerHTML = "My father is " + myFather.name();
+
+</script>
+
+</body>
+</html>
